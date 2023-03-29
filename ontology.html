@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Ontology</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <!-- owl stylesheets --> 
+      <link rel="stylesheet" href="css/owl.carousel.min.css">
+      <link rel="stylesoeet" href="css/owl.theme.default.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+   </head>
+   <body>
+      <!-- header section start -->
+      <div class="header_section">
+         <div class="container-fluid header_main">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+               <!-- <a class="logo" href="index.html"><img src="images/logo.png"></a> -->
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html">About</a>
+                     </li>
+              
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/bikash-borah-36137724a">
+                           Connect with <i class='fa fa-linkedin-square' style= 'font-size: 24px; color: rgb(51, 0, 255)'></i></a>
+                     </li>
+                    
+                     
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+      <!-- blog section start --> 
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-8 col-sm-12">
+                  <div class="about_img"><img src="images/building tea classification.png"></div>
+               
+      
+              <h2 class="most_text">Ontology</h2>
+              <p>Ontology refers to a formal representation of the concepts and relationships within a specific domain, which is used to enhance the search process. It provides a common vocabulary for representing and sharing information, facilitating the understanding of data by both humans and machines
+          <h3>Enhancing Search Results: The Power of Semantic Search and Ontology</h3>
+<p>Semantic search and ontology can improve search results by providing a more accurate understanding of the meaning behind search queries and content. By leveraging ontologies, semantic search engines can better interpret the relationships between concepts, leading to more relevant and personalized search results. Additionally, ontologies provide a common vocabulary that facilitates the understanding of data by both humans and machines, which is essential for improving search results in today's data-driven world.
+</p>
+<h3>The Benefits of Ontology: Enhancing Data Understanding and Integration
+</h3>
+<p>Provides a Common Vocabulary: Ontologies provide a standardized vocabulary for describing concepts and relationships, which ensures that all stakeholders have a shared understanding of the data.</p>
+   <p> Enables Semantic Interoperability: Ontologies facilitate the integration of data from multiple sources, allowing systems to communicate with each other and share information effectively.</p>
+    <p>Improves Data Accuracy and Consistency: By using ontologies to structure data, organizations can ensure that information is accurate, consistent, and up-to-date.</p>
+    <p>Enhances Search and Retrieval: Ontologies can be used to improve search and retrieval capabilities by providing a more precise understanding of the relationships between concepts.
+    </p>
+
+    <p>Supports Knowledge Management: Ontologies can serve as a foundation for knowledge management systems, enabling organizations to capture and share knowledge effectively.</p>
+       <p> Enables Machine Learning and AI: By using ontologies to structure data, organizations can provide a framework for machine learning and artificial intelligence algorithms to learn from.</p>
+        <p>Supports Decision Making: Ontologies can be used to support decision making by providing a more comprehensive understanding of the data, enabling stakeholders to make more informed decisions.
+        </p>
+        <h3>Building Ontologies using Python for tea classification : </h3>
+        <h4>Steps:</h4>
+        <p>Import the "Owlready2" library at the beginning of the script.</p>
+          <p>  Define the ontology using the "get_ontology" function and a URL to identify it.</p>
+           <p>Define the entities as classes using the "class" keyword. In this example, the entities are "Tea", "Type", and "Region".</p>
+           <p> Define subclasses to break down additional details. In this example, subclasses of "Type" are "Black", "Oolong", and "White", and subclasses of "Region" are "China", "India", and "Sri_Lanka".</p>
+            <p>Define the relationships between the entities using the "ObjectProperty" and "Functional Property" keywords. In this example, the relationship between "Tea" and "Type" is defined using the "has_roast" property, and the relationship between "Tea" and "Region" is defined using the "from_region" property.</p>
+            </p>
+            <p>Define the characteristics for specific tea types or lines using the "equivalent_to" keyword. In this example, "Darjeeling" tea is defined as a "Tea" with a "Black" roast from "India", and "Sencha" tea is defined as a "Tea" with a "White" roast from "China".</p>
+               <p></p> Define that all different types and regions are unique using the "AllDifferent" keyword.</p>
+               <p> Define some unknown teas and their characteristics using the "Tea" class and the "has_roast" and "from_region" properties.</p>
+               <p> Close the world to restrict the ontology to only defined relationships and characteristics.</p>
+               <p> Analyze the world and classify the teas using the "sync_reasoner" function.</p>
+               <p> Review the information about the parent class and the specific tea types using the ".is_a" property.
+                </p>
+<h2>GitHub Code Link for Implementing a tea classification</h2>
+
+                     <a href="https://github.com/BKB-2303/Bikash-Borah-WEB/blob/main/tea_ontology.ipynb">https://github.com/BKB-2303/Bikash-Borah-WEB/blob/main/tea_ontology.ipynb</a>
+              
+      <!-- blog section end --> 
+      <!-- footer section start -->
+      <div class="col-lg-4 col-sm-12">
+         <div class="about_main">
+         
+         </div>
+      </div>
+   </div>
+</div>
+</div>
+      <div class="footer_section layout_padding">
+         <div class="container">
+            
+         
+            <div class="contact_menu">
+               <ul>
+                  
+                  <li><a href="#"><img src="images/call-icon.png"></a></li>
+                  <li><a href="tel:+91 8822045466">Call : +91 8822045466</a></li>
+                  <li><a href="blog.html"><img src="images/mail-icon.png"></a></li>
+                  <li><a href="mailto:borahbikash2303@gmail.com">borahbikash2303@gmail.com</a></li>
+               </ul>
+            </div>
+         </div>
+      </div>
+      <!-- footer section end -->
+      <!-- copyright section start -->
+      
+      <!-- copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   </body>
+</html>
